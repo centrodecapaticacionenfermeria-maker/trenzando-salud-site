@@ -1,0 +1,30 @@
+<%- include('partials/header', { title: 'Registro a diplomados' }) %>
+
+<h1>Registro a diplomados</h1>
+<p>Completa tus datos para iniciar el proceso de inscripción. Un asesor del Centro se comunicará contigo.</p>
+
+<form data-preinscripcion>
+  <label>Nombre completo</label>
+  <input name="nombre" required />
+
+  <label>Correo electrónico</label>
+  <input type="email" name="correo" required />
+
+  <label>Teléfono / WhatsApp</label>
+  <input name="telefono" required />
+
+  <label>Diplomado de interés</label>
+  <select name="programa" required>
+    <option value="">Selecciona</option>
+    <option>APS Intercultural para Equipos Multidisciplinarios</option>
+    <option>Liderazgo Comunitario en Salud y Gestión del Cuidado Intercultural</option>
+    <option>APS Intercultural y Normativa Vigente</option>
+  </select>
+
+  <label>Mensaje / Institución / Ciudad</label>
+  <textarea name="mensaje" rows="4"></textarea>
+
+  <button class="btn" type="submit">Enviar registro</button>
+</form>
+
+<%- include('partials/footer') %>

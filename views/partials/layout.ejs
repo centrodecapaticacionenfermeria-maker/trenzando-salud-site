@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %> · Trenzando la Salud</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">Trenzando la Salud</a>
+      <nav class="nav">
+        <a href="/quienes-somos">Quiénes somos</a>
+        <a href="/mision">Misión</a>
+        <a href="/vision">Visión</a>
+        <a href="/programas">Oferta académica</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <%- body %>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Trenzando la Salud con la Interculturalidad · Propuesta profesional.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('form[data-preinscripcion]');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const payload = Object.fromEntries(fd.entries());
+        const r = await fetch('/api/preinscripcion', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const j = await r.json();
+        alert(j.message || 'Enviado');
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>
