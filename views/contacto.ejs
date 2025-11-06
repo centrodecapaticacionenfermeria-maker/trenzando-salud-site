@@ -1,21 +1,13 @@
+<%- include('partials/header', { title: 'Contacto' }) %>
 
-<% layout('partials/layout') %>
-<h1>Contacto e inscripción</h1>
-<form data-preinscripcion>
-  <label>Nombre completo</label>
-  <input name="nombre" required />
-  <label>Correo electrónico</label>
-  <input type="email" name="correo" required />
-  <label>Teléfono / WhatsApp</label>
-  <input name="telefono" required />
-  <label>Diplomado de interés</label>
-  <select name="programa" required>
-    <option value="">Selecciona</option>
-    <option>APS Intercultural</option>
-    <option>Liderazgo Comunitario</option>
-    <option>APS + Normativa</option>
-  </select>
-  <label>Mensaje</label>
-  <textarea name="mensaje" rows="4"></textarea>
-  <button class="btn" type="submit">Enviar preinscripción</button>
-</form>
+<h1>Contacto</h1>
+<p>Para más información sobre nuestros diplomados y asesorías en salud intercultural, contáctanos:</p>
+
+<div class="programa">
+  <p><strong>Centro de Capacitación "Trenzando la Salud con la Interculturalidad"</strong></p>
+  <p>Cauca, Colombia</p>
+  <p>Correo: centrodecapacitacionenfermeria@gmail.com (ejemplo, ajusta al real)</p>
+  <p>WhatsApp: +57 315 000 0000 (ajusta al real)</p>
+</div>
+
+<%- include('partials/footer') %>
