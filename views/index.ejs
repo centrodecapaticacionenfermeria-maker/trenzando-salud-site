@@ -1,14 +1,13 @@
+<%- include('partials/header', { title: 'Inicio' }) %>
 
-<% layout('partials/layout') %>
 <section class="hero">
   <div class="hero-left">
-    <span class="tag">Centro de Capacitación · Salud Intercultural Nasa Páez</span>
-    <h1>Quiénes somos</h1>
-    <p>Somos el Centro de Capacitación <strong>"Trenzando la Salud con la Interculturalidad"</strong>, liderado por enfermeros indígenas Nasa Páez (Cauca, Colombia). Integramos conocimiento técnico-científico con saberes ancestrales para formar equipos de salud en atención primaria intercultural.</p>
-    <p>Nuestro compromiso es el cuidado culturalmente seguro, la equidad, la humanización y la confianza en comunidades indígenas y rurales.</p>
+    <span class="tag">Centro de Capacitación en Salud Intercultural</span>
+    <h1>Trenzando la Salud con la Interculturalidad</h1>
+    <p>Formación liderada por enfermeros indígenas Nasa Páez del Cauca, integrando el conocimiento técnico-científico con los saberes ancestrales para una atención primaria culturalmente segura.</p>
     <div class="btns">
-      <a class="btn" href="/mision">¿Cuál es nuestra misión?</a>
-      <a class="btn outline" href="/programas">Ver oferta académica</a>
+      <a class="btn" href="/quienes-somos">Quiénes somos</a>
+      <a class="btn outline" href="/programas">Ver diplomados</a>
     </div>
   </div>
   <div class="hero-right">
@@ -17,22 +16,24 @@
 </section>
 
 <section>
-  <h2>Diplomados destacados</h2>
+  <h2>Nuestros diplomados</h2>
   <div class="cards">
     <article class="card">
       <h3>APS Intercultural para Equipos Multidisciplinarios</h3>
-      <p>120 h · $2'100.000 · Virtual/Presencial/Mixta</p>
-      <a href="/programas" class="btn small">Ver detalles</a>
+      <p>120 horas · $2'100.000 COP · Virtual / Presencial / Mixta</p>
+      <a class="btn small" href="/registro?programa=APS+Intercultural">Registrarse</a>
     </article>
     <article class="card">
-      <h3>Liderazgo Comunitario y Gestión del Cuidado</h3>
-      <p>140 h · $2'000.000 · Con visitas territoriales</p>
-      <a href="/programas" class="btn small">Ver detalles</a>
+      <h3>Liderazgo Comunitario en Salud Intercultural</h3>
+      <p>140 horas · $2'000.000 COP · Con visitas territoriales</p>
+      <a class="btn small" href="/registro?programa=Liderazgo+Comunitario">Registrarse</a>
     </article>
     <article class="card">
-      <h3>APS Intercultural + Normativa Vigente</h3>
-      <p>100 h · $2'000.000 · Presencial/Virtual/Mixta</p>
-      <a href="/programas" class="btn small">Ver detalles</a>
+      <h3>APS Intercultural y Normativa Vigente</h3>
+      <p>100 horas · $2'000.000 COP · Presencial / Virtual / Mixta</p>
+      <a class="btn small" href="/registro?programa=APS+Normativa">Registrarse</a>
     </article>
   </div>
 </section>
+
+<%- include('partials/footer') %>
