@@ -31,5 +31,5 @@ app.post('/api/preinscripcion', (req, res) => {
   return res.json({ ok: true, message: '¡Gracias! te contactaremos pronto.' });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 app.listen(port, () => console.log(`Servidor escuchando en puerto ${port}`));
