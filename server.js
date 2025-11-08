@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const compression = require('compression');
@@ -11,13 +10,14 @@ app.use(compression());
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+
+// Servir archivos estáticos desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'public')));
 
+// Rutas para las vistas
 app.get('/', (req, res) => res.render('index', { title: 'Trenzando la Salud' }));
 app.get('/quienes-somos', (req, res) => res.render('quienes', { title: 'Quiénes somos' }));
 app.get('/mision', (req, res) => res.render('mision', { title: 'Misión' }));
@@ -26,7 +26,7 @@ app.get('/programas', (req, res) => res.render('programas', { title: 'Oferta aca
 app.get('/contacto', (req, res) => res.render('contacto', { title: 'Contacto' }));
 app.get('/registro', (req, res) => res.render('registro', { title: 'Registro a diplomados' }));
 
-
+// API para la preinscripción
 app.post('/api/preinscripcion', (req, res) => {
   const data = req.body || {}
   console.log('Preinscripción recibida:', data);
