@@ -1,30 +1,42 @@
 <%- include('partials/header', { title: 'Registro a diplomados' }) %>
 
-<h1>Registro a diplomados</h1>
-<p>Completa el formulario para iniciar tu proceso de inscripción. Un asesor del Centro se comunicará contigo.</p>
+<h1>Regístrate en nuestros Diplomados</h1>
+<p>¡Completa el formulario y nos pondremos en contacto contigo para iniciar tu proceso de inscripción!</p>
 
-<form data-preinscripcion>
-  <label>Nombre completo</label>
-  <input name="nombre" required />
+<form class="form-registrar" data-preinscripcion>
+  <div class="input-group">
+    <label for="nombre">Nombre completo</label>
+    <input id="nombre" type="text" name="nombre" required placeholder="Ingresa tu nombre completo" />
+  </div>
 
-  <label>Correo electrónico</label>
-  <input type="email" name="correo" required />
+  <div class="input-group">
+    <label for="correo">Correo electrónico</label>
+    <input id="correo" type="email" name="correo" required placeholder="ejemplo@dominio.com" />
+  </div>
 
-  <label>Teléfono / WhatsApp</label>
-  <input name="telefono" required />
+  <div class="input-group">
+    <label for="telefono">Teléfono / WhatsApp</label>
+    <input id="telefono" type="tel" name="telefono" required placeholder="Ingresa tu número de teléfono" />
+  </div>
 
-  <label>Diplomado de interés</label>
-  <select name="programa" required>
-    <option value="">Selecciona</option>
-    <option>APS Intercultural para Equipos Multidisciplinarios</option>
-    <option>Liderazgo Comunitario en Salud y Gestión del Cuidado Intercultural</option>
-    <option>APS Intercultural y Normativa Vigente</option>
-  </select>
+  <div class="input-group">
+    <label for="programa">Diplomado de interés</label>
+    <select id="programa" name="programa" required>
+      <option value="">Selecciona un diplomado</option>
+      <option value="APS Intercultural para Equipos Multidisciplinarios">APS Intercultural para Equipos Multidisciplinarios</option>
+      <option value="Liderazgo Comunitario en Salud y Gestión del Cuidado Intercultural">Liderazgo Comunitario en Salud</option>
+      <option value="APS Intercultural y Normativa Vigente">APS Intercultural y Normativa Vigente</option>
+    </select>
+  </div>
 
-  <label>Mensaje / Institución / Ciudad</label>
-  <textarea name="mensaje" rows="4"></textarea>
+  <div class="input-group">
+    <label for="mensaje">Mensaje / Institución / Ciudad</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje o detalles adicionales" required></textarea>
+  </div>
 
-  <button class="btn" type="submit">Enviar registro</button>
+  <div class="btn-container">
+    <button type="submit" class="btn btn-submit">Enviar registro</button>
+  </div>
 </form>
 
 <%- include('partials/footer') %>
