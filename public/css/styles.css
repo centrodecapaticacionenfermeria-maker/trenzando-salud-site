@@ -244,3 +244,50 @@ textarea::placeholder {
   .hero-left{ order:1; }
   .hero-right{ order:2; }
 }
+/* Layout de Quiénes Somos */
+.qs{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 24px 0 8px;
+}
+
+.qs-left h1{
+  margin-bottom: 8px;
+}
+
+.qs-left p{
+  margin: 10px 0 0;
+  color:#333;
+  max-width: 70ch;
+}
+
+/* Tarjeta para la imagen */
+.qs-right{ display:flex; justify-content:center; }
+
+.image-hero{
+  background:#fff;
+  border:1px solid #e8e2dc;
+  border-radius:16px;
+  padding:18px;                  /* margen interno alrededor de la imagen */
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+  max-width:520px; width:100%;
+  aspect-ratio: 4/5;             /* tarjeta vertical */
+  display:flex; align-items:center; justify-content:center;
+}
+
+.qs-logo{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;            /* que no se recorte */
+  display:block;
+  border-radius:8px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .qs{ grid-template-columns: 1fr; }
+  .qs-right{ order:-1; }         /* imagen arriba en móvil (opcional) */
+  .image-hero{ aspect-ratio: 3/4; padding:14px; }
+}
