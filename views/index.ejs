@@ -1,40 +1,58 @@
 <%- include('partials/header', { title: 'Inicio' }) %>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <span class="tag">Centro de Capacitación en Salud Intercultural</span>
     <h1>Trenzando la Salud con la Interculturalidad</h1>
-    <p>Formación liderada por enfermeros indígenas Nasa Páez del Cauca, integrando el conocimiento técnico-científico con los saberes ancestrales para una atención primaria culturalmente segura.</p>
+    <p>
+      Formación liderada por enfermeros indígenas Nasa Páez del Cauca, integrando el conocimiento
+      técnico-científico con los saberes ancestrales para una atención primaria culturalmente segura.
+    </p>
+
     <div class="btns">
-      <a class="btn" href="/quienes-somos">Quiénes somos</a>
-      <a class="btn outline" href="/programas">Ver diplomados</a>
+      <a class="btn" href="/quienes-somos" aria-label="Ir a ¿Quiénes somos?">Quiénes somos</a>
+      <a class="btn outline" href="/programas" aria-label="Ver diplomados disponibles">Ver diplomados</a>
     </div>
   </div>
+
   <div class="hero-right">
-    dat
-    <div class="hero-img"></div>
+    <div class="hero-img">
+      <img
+        src="/images/logo-intercultural.png"
+        alt="Centro de Capacitación en Enfermería Intercultural"
+        class="hero-logo"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Nuestros diplomados</h2>
+<!-- DIPLOMADOS DESTACADOS -->
+<section class="home-programas">
+  <h2>Nuetros diplomados</h2>
+
   <div class="cards">
     <article class="card">
       <h3>APS Intercultural para Equipos Multidisciplinarios</h3>
       <p>120 horas · $2'100.000 COP · Virtual / Presencial / Mixta</p>
       <a class="btn small" href="/registro?programa=APS+Intercultural">Registrarse</a>
     </article>
+
     <article class="card">
       <h3>Liderazgo Comunitario en Salud Intercultural</h3>
       <p>140 horas · $2'000.000 COP · Con visitas territoriales</p>
       <a class="btn small" href="/registro?programa=Liderazgo+Comunitario">Registrarse</a>
     </article>
+
     <article class="card">
       <h3>APS Intercultural y Normativa Vigente</h3>
       <p>100 horas · $2'000.000 COP · Presencial / Virtual / Mixta</p>
       <a class="btn small" href="/registro?programa=APS+Normativa">Registrarse</a>
     </article>
   </div>
-</section>
 
-<%- include('partials/footer') %>
+  <div class="cta-more">
+    <a class="btn" href="/programas">Ver toda la oferta</a>
+  <
