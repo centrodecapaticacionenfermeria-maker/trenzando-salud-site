@@ -291,3 +291,47 @@ textarea::placeholder {
   .qs-right{ order:-1; }         /* imagen arriba en móvil (opcional) */
   .image-hero{ aspect-ratio: 3/4; padding:14px; }
 }
+/* ====== Misión ====== */
+.mi{
+  display:grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 24px 0 8px;
+}
+.mi-left h1{ margin-bottom: 8px; }
+.mi-left p{ margin: 10px 0 0; max-width: 70ch; }
+
+/* Reutilizamos el estilo de tarjeta .image-hero y lo adaptamos a foto apaisada */
+.image-hero{
+  background:#fff;
+  border:1px solid #e8e2dc;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+  max-width:720px; /* puede ser menor si quieres */
+  width:100%;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* >>> nuevo: variante horizontal para misión */
+.image-hero.landscape{ 
+  aspect-ratio: 16/9;           /* tarjeta apaisada */
+  padding:14px;
+}
+
+/* Imagen interna genérica de páginas */
+.page-photo{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;           /* muestra la foto completa sin recortar */
+  display:block;
+  border-radius:8px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .mi{ grid-template-columns: 1fr; }
+  .mi-right{ order:-1; }        /* foto arriba en móvil (opcional) */
+  .image-hero.landscape{ aspect-ratio: 4/3; }
+}
