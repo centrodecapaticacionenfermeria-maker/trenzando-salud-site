@@ -427,3 +427,23 @@ textarea::placeholder {
 .gallery-item img{
   width:100%; height:100%; object-fit:cover; display:block; border-radius:8px;
 }
+.testimonios {
+  margin-top: 3rem;
+  text-align: center;
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonios h2 {
+  color: #a24016;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.audio-box audio {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 1rem;
+}
