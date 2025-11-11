@@ -410,3 +410,20 @@ textarea::placeholder {
   .gallery-grid{ gap: 12px; }
   .gallery-item{ padding: 6px; border-radius: 12px; }
 }
+.gallery h1{ margin-bottom:6px; }
+.gallery-intro{ color:#444; margin-bottom:16px; }
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:14px;
+}
+.gallery-item{
+  background:#fff; border:1px solid #e8e2dc; border-radius:14px; padding:8px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  display:flex; align-items:center; justify-content:center;
+  aspect-ratio:4/3; overflow:hidden;
+}
+.gallery-item img{
+  width:100%; height:100%; object-fit:cover; display:block; border-radius:8px;
+}
