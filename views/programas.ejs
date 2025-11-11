@@ -1,23 +1,31 @@
 <%- include('partials/header', { title: 'Oferta académica' }) %>
-<link rel="stylesheet" href="/css/styles.css" />
-<script src="/js/main.js"></script>
 
 <h1>Oferta académica: Diplomados</h1>
-<script src="/js/main.js"></script>
 
 <section class="programa">
   <h2>"Atención Primaria en Salud Intercultural para Equipos Básicos Multidisciplinarios"</h2>
-  <p><strong>Duración:</strong> 120 horas (3 meses) · <strong>Valor:</strong> $2'100.000 COP · <strong>Modalidad:</strong> Virtual, presencial o mixta</p>
-  
-  <button class="btn show-more">Más información</button>
+  <p>
+    <strong>Duración:</strong> 120 horas (3 meses) ·
+    <strong>Valor:</strong> $2'100.000 COP ·
+    <strong>Modalidad:</strong> Virtual, presencial o mixta
+  </p>
 
-  <div class="more-info" style="display: none;">
-    <h3>Descripción:</h3>
-    <p>Este diplomado capacita a enfermeros y equipos de salud en las competencias necesarias para brindar atención primaria culturalmente segura y respetuosa en comunidades indígenas. Integra conocimientos técnicos científicos con saberes ancestrales Nasa Páez, promoviendo comunicación efectiva, ética del cuidado y protocolos adaptados a la cosmovisión indígena.</p>
+  <button class="btn show-more" type="button" aria-expanded="false" aria-controls="p1">
+    Más información
+  </button>
 
-    <h3>Pensum Académico:</h3>
+  <div id="p1" class="more-info" hidden>
+    <h3>Descripción</h3>
+    <p>
+      Este diplomado capacita a enfermeros y equipos de salud en las competencias necesarias para brindar
+      atención primaria culturalmente segura y respetuosa en comunidades indígenas. Integra conocimientos
+      técnico-científicos con saberes ancestrales Nasa Páez, promoviendo comunicación efectiva, ética del
+      cuidado y protocolos adaptados a la cosmovisión indígena.
+    </p>
+
+    <h3>Pensum Académico</h3>
     <ul>
-      <li>Introducción a la salud intercultural y los determinantes sociales en comunidades indígenas.</li>
+      <li>Introducción a la salud intercultural y determinantes sociales en comunidades indígenas.</li>
       <li>Cosmovisión Nasa Páez: creencias, prácticas y medicina tradicional.</li>
       <li>Comunicación efectiva intercultural y lengua Nasa Yuwe básica.</li>
       <li>Atención primaria en salud: modelos y protocolos interculturales.</li>
@@ -27,21 +35,32 @@
       <li>Caso práctico: diseño de plan de cuidado culturalmente adaptado.</li>
     </ul>
   </div>
-  
+
   <a class="btn small" href="/registro?programa=APS+Intercultural">Registrarse</a>
 </section>
 
 <section class="programa">
   <h2>"Liderazgo Comunitario en Salud y Gestión del Cuidado Intercultural"</h2>
-  <p><strong>Duración:</strong> 140 horas (3.5 meses) · <strong>Valor:</strong> $2'000.000 COP · <strong>Modalidad:</strong> Virtual y presencial (con visitas territoriales)</p>
-  
-  <button class="btn show-more">Más información</button>
+  <p>
+    <strong>Duración:</strong> 140 horas (3.5 meses) ·
+    <strong>Valor:</strong> $2'000.000 COP ·
+    <strong>Modalidad:</strong> Virtual y presencial (con visitas territoriales)
+  </p>
 
-  <div class="more-info" style="display: none;">
-    <h3>Descripción:</h3>
-    <p>Desarrolla competencias de liderazgo, gestión y coordinación de programas de salud en territorios indígenas. Prepara a enfermeros y líderes comunitarios para actuar como mediadores entre el sistema formal de salud y las comunidades, fortaleciendo el Sistema Indígena de Salud Propio e Intercultural (SISPI) y promoviendo participación, equidad y gobernanza en salud.</p>
+  <button class="btn show-more" type="button" aria-expanded="false" aria-controls="p2">
+    Más información
+  </button>
 
-    <h3>Pensum Académico:</h3>
+  <div id="p2" class="more-info" hidden>
+    <h3>Descripción</h3>
+    <p>
+      Desarrolla competencias de liderazgo, gestión y coordinación de programas de salud en territorios
+      indígenas. Prepara a enfermeros y líderes comunitarios para actuar como mediadores entre el sistema
+      formal de salud y las comunidades, fortaleciendo el SISPI y promoviendo participación, equidad y
+      gobernanza en salud.
+    </p>
+
+    <h3>Pensum Académico</h3>
     <ul>
       <li>Marco normativo de salud intercultural en Colombia: SISPI, Ley 1438, Convenio 169 OIT.</li>
       <li>Liderazgo transformacional y trabajo en equipo multidisciplinario.</li>
@@ -51,35 +70,45 @@
       <li>Estrategias de promoción de la salud y prevención de enfermedades con enfoque territorial.</li>
     </ul>
   </div>
-  
+
   <a class="btn small" href="/registro?programa=Liderazgo+Comunitario">Registrarse</a>
 </section>
 
 <section class="programa">
   <h2>"Educación continua sobre la Atención Primaria en Salud Intercultural bajo la normativa vigente en Colombia"</h2>
-  <p><strong>Duración:</strong> 100 horas (2.5 meses) · <strong>Valor:</strong> $2'000.000 COP · <strong>Modalidad:</strong> Presencial, virtual o mixta</p>
-  
-  <button class="btn show-more">Más información</button>
+  <p>
+    <strong>Duración:</strong> 100 horas (2.5 meses) ·
+    <strong>Valor:</strong> $2'000.000 COP ·
+    <strong>Modalidad:</strong> Presencial, virtual o mixta
+  </p>
 
-  <div class="more-info" style="display: none;">
-    <h3>Descripción:</h3>
-    <p>Capacita a enfermeros, auxiliares y otros profesionales de salud para fortalecer sus competencias en el modelo de Atención Primaria en Salud (APS) adaptado a territorios con población indígena, rural y vulnerable. Integra el marco normativo colombiano vigente (PDSP 2022-2031, Resolución 2367 de 2023, Resolución 2206 de 2022, Ley 1438 y Ley Estatutaria 1751), con herramientas prácticas y saberes ancestrales de la comunidad Nasa.</p>
+  <button class="btn show-more" type="button" aria-expanded="false" aria-controls="p3">
+    Más información
+  </button>
 
-    <h3>Pensum Académico:</h3>
+  <div id="p3" class="more-info" hidden>
+    <h3>Descripción</h3>
+    <p>
+      Capacita a enfermeros, auxiliares y otros profesionales de salud para fortalecer sus competencias en el
+      modelo de APS adaptado a territorios con población indígena, rural y vulnerable, integrando el marco
+      normativo colombiano vigente con herramientas prácticas y saberes ancestrales de la comunidad Nasa.
+    </p>
+
+    <h3>Pensum Académico</h3>
     <ul>
-      <li>Fundamentos de la Atención Primaria en Salud en el marco colombiano.</li>
+      <li>Fundamentos de la APS en el marco colombiano.</li>
       <li>Normatividad vigente: PDSP, Ley 1751, Resoluciones APS.</li>
       <li>Promoción de la salud y prevención de la enfermedad: estrategias territoriales.</li>
-      <li>Aplicación y adaptación de protocolos institucionales en contextos étnicos y rurales.</li>
+      <li>Adaptación de protocolos institucionales en contextos étnicos y rurales.</li>
       <li>Integración de prácticas ancestrales y saberes propios en APS.</li>
       <li>Diagnóstico de riesgos comunitarios y determinantes sociales.</li>
-      <li>Metodologías participativas en salud intercultural: minga, cabildo y asambleas.</li>
+      <li>Metodologías participativas: minga, cabildo y asambleas.</li>
       <li>Comunicación intercultural con usuarios, familias y comunidades.</li>
       <li>Diseño y ejecución de planes territoriales de salud.</li>
       <li>Evaluación y seguimiento: indicadores de impacto en APS intercultural.</li>
     </ul>
   </div>
-  
+
   <a class="btn small" href="/registro?programa=APS+Normativa">Registrarse</a>
 </section>
 

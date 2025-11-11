@@ -335,3 +335,6 @@ textarea::placeholder {
   .mi-right{ order:-1; }        /* foto arriba en móvil (opcional) */
   .image-hero.landscape{ aspect-ratio: 4/3; }
 }
+/* Programas */
+.programa { margin: 22px 0; }
+.programa .more-info { margin-top: 12px; }
