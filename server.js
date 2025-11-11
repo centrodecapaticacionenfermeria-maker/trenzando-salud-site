@@ -35,3 +35,5 @@ app.post('/api/preinscripcion', (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Servidor escuchando en puerto ${port}`));
+
+app.get('/galeria', (req, res) => res.render('galeria', { title: 'Galería' }));
