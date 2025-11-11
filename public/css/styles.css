@@ -338,3 +338,18 @@ textarea::placeholder {
 /* Programas */
 .programa { margin: 22px 0; }
 .programa .more-info { margin-top: 12px; }
+/* Estado base: oculto solo si tiene el atributo hidden */
+.more-info { display: block; margin-top: 12px; }
+
+/* Si tuvieras alguna regla vieja como .more-info { display:none } quedará sobrescrita por inline style del JS. */
+.more-info[hidden] { display: none !important; }
+
+/* Opcional: animación de despliegue */
+.more-info {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .3s ease;
+}
+.more-info.open {
+  max-height: 1200px; /* suficiente para el contenido; ajusta si hace falta */
+}
